@@ -1,0 +1,66 @@
+:root {
+
+  --primary-green: #036b52;
+
+  --secondary-green: #2fc18c;
+
+  --primary-purple: #421981;
+
+  --primary-blue: #056cf9;
+}
+
+.header {
+  z-index: 99;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-bar {
+  background-color: var(--primary-green);
+  justify-content: space-between;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.group-1 a, .group-2 a {
+  padding: 1rem;
+}
+
+.group-1 a:hover {
+  background-color: var(--secondary-green);
+  transition: 150ms;
+}
+
+.group-1 h1 {
+  align-items: center;
+  background-color: var(--secondary-green);
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.group-2 .user {
+  align-items: center;
+  background-color: var(--primary-purple);
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+
+.group-2 .logout {
+  background-color: var(--primary-blue);
+}
+
+.group-2 .logout:hover {
+  background-color: #005fe4;
+  transition: 150ms;
+}

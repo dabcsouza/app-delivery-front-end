@@ -1,0 +1,366 @@
+@font-face {
+  font-family: CollegeBlock;
+  src: url('/src/fonts/CollegeBlock-Mzxn.ttf');
+}
+
+html, body, div, span, applet, object, iframe,
+table, caption, tbody, tfoot, thead, tr, th, td, button {
+border: 0;
+font-family: inherit;
+font-size: 100%;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: 0;
+padding: 0;
+vertical-align: baseline;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: CollegeBlock , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+
+  --black-light: rgb(43, 43, 43);
+
+  --black-dark: black;
+}
+
+.btn {
+  background-color: var(--black-light);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-block: 0.5rem;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--black-dark);
+}
+
+.embreagados {
+  max-width: 200px;
+  width: 100%;
+}
+
+.total-price-button {
+  align-items: center;
+  background-color: rgb(27, 133, 71);
+  border: 1px solid rgb(125, 202, 157);
+  bottom: 50px;
+  color: white;
+  display: flex;
+  float: right;
+  font-size: 20px;
+  padding: 7px 15px;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  width: auto;
+}
+
+.total-price-button:hover {
+  background-color: rgb(125, 202, 157);
+  border: 1px solid rgb(27, 133, 71);
+  color: white;
+  cursor: pointer;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  height: auto;
+}
+
+tr {
+  max-height: 20px;
+  overflow: hidden;
+}
+
+.details-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Inter , sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  vertical-align: center;
+  width: 90%;
+}
+
+.details-table td {
+  border: 1px solid rgba(204, 204, 204, 0.356);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+.details-table td:first-child {
+  background-color: #2fc18c;
+  border-radius: 10px 0 0 10px;
+  color: #001813;
+  font-weight: 600;
+  width: 50px;
+}
+
+.details-table td:nth-child( 2 ) {
+  background-color: #eaf1ef;
+}
+
+.details-table td:nth-child( 3 ) {
+  background-color: #036b52;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 40px;
+}
+
+.details-table td:nth-child( 4 ) {
+  background-color: #421981;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 100px;
+}
+
+.details-table td:nth-child( 5 ) {
+  background-color: #056cf9;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 100px;
+}
+
+.details-table td:last-child {
+  background-color: #2fc18c;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details-table td:last-child button {
+  background-color: #2fc18c;
+  color: #f2fffc;
+  height: 100%;
+  width: 100%;
+}
+
+.details-table td:last-child button:hover {
+  cursor: pointer;
+}
+
+.details-table thead {
+  color: rgba(37, 36, 36, 0.726);
+  font-family: Open Sans , sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.total-price-button-checkout {
+  align-self: end;
+  background-color: rgb(27, 133, 71);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-family: Open Sans , sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 5%;
+  padding: 7px 15px;
+}
+
+.total-price-button-checkout:hover {
+  background-color: rgba(27, 133, 71, 0.884);
+  color: white;
+  cursor: pointer;
+}
+
+.details-container p {
+  font-family: Open Sans , sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 2px 95px;
+}
+
+.order-card {
+  align-items: center;
+  background-color: #ccc;
+  border-radius: 0.3rem;
+  gap: 1%;
+  height: 85px;
+  justify-content: space-between;
+  padding: 1%;
+  width: 450px;
+}
+
+.order-card:hover {
+  cursor: pointer;
+}
+
+.order-number {
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 0.3rem;
+  height: 100%;
+  justify-content: center;
+  width: 29%;
+}
+
+.order-status {
+  align-items: center;
+  background-color: aqua;
+  border-radius: 0.3rem;
+  justify-content: center;
+  width: 49%;
+}
+
+.stretch {
+  height: 100%;
+}
+
+.order-status h2 {
+  font-weight: 500;
+}
+
+.order-details {
+  flex-direction: column;
+  gap: 0.2rem;
+  height: 100%;
+  justify-content: space-between;
+  width: 49%;
+}
+
+.order-details span {
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 0.3rem;
+  height: 45%;
+  justify-content: center;
+  text-align: center;
+}
+
+.group-2-order {
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 70%;
+}
+
+.group-2-a {
+  justify-content: space-between;
+}
+
+.address {
+  align-items: center;
+  justify-content: end;
+}
+
+.checkout-form {
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  flex-direction: column;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  padding-top: 0.8rem;
+  width: 85%;
+}
+
+.checkout-inputs {
+  align-items: center;
+  gap: 1%;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.checkout-inputs label {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.seller, .number-input-field {
+  width: 22%;
+}
+
+.seller select {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.address {
+  width: 55%;
+}
+
+.address-input-field {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.number-input-field {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.btn-checkout {
+  background-color: #036b52;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.btn-checkout:hover {
+  background-color: #005340;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.register-page {
+  background-color: black;
+}
+
+.register-container{
+  border: 2px solid white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+ .register-container form .btn{
+   height: 45px;
+   margin-top: 20px;
+ }
+
+  .register-container form .btn:hover {
+    cursor: pointer;
+    background-color: #b8b9b9;
+    color: black;
+  }
+
+.register-container, .register-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.register-container form label{
+  margin-top: 20px;
+  align-items: center;
+  display: block;
+  font-size: 20px;
+}
+
+.register-container form label input {
+  padding : 7px;
+  width: 200px;
+  height: 35px;
+  display: block;
+}

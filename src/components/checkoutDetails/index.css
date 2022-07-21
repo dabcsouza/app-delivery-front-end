@@ -1,0 +1,113 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  height: auto;
+}
+
+tr {
+  max-height: 20px;
+  overflow: hidden;
+}
+
+.details-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Inter , sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 1rem;
+  vertical-align: center;
+  width: 90%;
+}
+
+.details-table td {
+  border: 1px solid rgba(204, 204, 204, 0.356);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+
+.details-table td:first-child {
+  background-color: #2fc18c;
+  border-radius: 10px 0 0 10px;
+  color: #001813;
+  font-weight: 600;
+  width: 50px;
+}
+
+.details-table td:nth-child( 2 ) {
+  background-color: #eaf1ef;
+}
+
+.details-table td:nth-child( 3 ) {
+  background-color: #036b52;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 40px;
+}
+
+.details-table td:nth-child( 4 ) {
+  background-color: #421981;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 100px;
+}
+
+.details-table td:nth-child( 5 ) {
+  background-color: #056cf9;
+  color: #f2fffc;
+  font-weight: 600;
+  width: 100px;
+}
+
+.details-table td:last-child {
+  background-color: #2fc18c;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details-table td:last-child button {
+  background-color: #2fc18c;
+  color: #f2fffc;
+  height: 100%;
+  width: 100%;
+}
+
+.details-table td:last-child button:hover {
+  cursor: pointer;
+}
+
+.details-table thead {
+  color: rgba(37, 36, 36, 0.726);
+  font-family: Open Sans , sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.total-price-button-checkout {
+  align-self: end;
+  background-color: rgb(27, 133, 71);
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-family: Open Sans , sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 10px 5%;
+  padding: 7px 15px;
+}
+
+.total-price-button-checkout:hover {
+  background-color: rgba(27, 133, 71, 0.884);
+  color: white;
+  cursor: pointer;
+}
+
+.details-container p {
+  font-family: Open Sans , sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 2px 95px;
+}
